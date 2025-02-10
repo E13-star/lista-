@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>     
+    var x = prompt("Digite uma nota de 0 a 10:  ")
+        if (x >= 7) {
+           alert("Aprovado")
+       }
+       else  {
+           alert("Reprovado")
+       }
+    document.write('Sua Nota é '+x)
+
+    var x = parseInt(prompt("Digite um número de 1 a 10:  "))
+    switch (x) {
+        case 1:
+            alert("Batata Frita");
+            break;
+        case 2:
+            alert("Arroz");
+            break;
+        case 3:
+            alert("Sabonete");
+            break;
+        case 4:
+            alert("Feijão");
+            break;
+        case 5:
+            alert("Açúcar");
+            break;
+        case 6:
+            alert("Desodorante");
+            break;
+        case 7:
+            alert("Alface");
+            break;
+        case 8:
+            alert("Papel Higiênico");
+            break;
+        case 9:
+            alert("Oléo de Soja");
+            break;
+        case 10:
+            alert("margarina");
+            break; 
+        default:
+            alert("Número Inválido");
+            break;
+    document.write('O produto é'+x)
+    }
+
+//************************************************************
+
+    var x = parseInt(prompt("Digite sua idade:  "))
+        if (x >= 18) {
+            alert("Você é maior de idade ");
+}           
+        else {
+            alert("Você é menor de idade"    );
+}
+    
+    document.write('Sua idade é: '+x)
+
+
+//****************************************************************
+
+var valor_total = parseFloat(prompt("Digite o valor total da compra: "));
+var tipo_assinatura = prompt("Digite o tipo de assinatura (silver, gold ou platinum): ");
+
+var desconto = 0;
+switch (tipo_assinatura) {
+  case "silver":
+    desconto = 0.05;
+    break;
+  case "gold":
+    desconto = 0.10;
+    break;
+  case "platinum":
+    desconto = 0.15;
+    break;
+}
+
+var valor_final = valor_total - (valor_total * desconto);
+
+
+if (valor_final > 300) {
+  document.write("Valor final da compra: R$" + valor_final);
+  document.write("Parabéns! Você ganhou um brinde especial!");
+} else {
+  document.write("Valor final da compra: R$" + valor_final);
+}
+
+    </script>                                             
+    
+    
+</body>
+</html>
